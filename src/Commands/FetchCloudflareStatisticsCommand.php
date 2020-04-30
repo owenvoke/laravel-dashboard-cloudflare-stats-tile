@@ -3,8 +3,8 @@
 namespace OwenVoke\CloudflareStatsTile\Commands;
 
 use Illuminate\Console\Command;
-use OwenVoke\CloudflareStatsTile\Services\Cloudflare;
 use OwenVoke\CloudflareStatsTile\CloudflareStatsStore;
+use OwenVoke\CloudflareStatsTile\Services\Cloudflare;
 
 class FetchCloudflareStatisticsCommand extends Command
 {
