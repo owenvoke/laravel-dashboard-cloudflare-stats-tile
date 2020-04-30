@@ -20,6 +20,7 @@ class CloudflareStatsTileComponent extends Component
 
         return view('dashboard-cloudflare-stats-tile::tile', [
             'domainStatistics' => $cloudflareStatsStore->domainStatistics(),
+            'refreshIntervalInSeconds' => config('dashboard.tiles.cloudflare_stats.refresh_interval_in_seconds', 60),
         ]);
     }
 }
