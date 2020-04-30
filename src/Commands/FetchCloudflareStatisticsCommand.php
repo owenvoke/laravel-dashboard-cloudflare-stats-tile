@@ -18,13 +18,13 @@ class FetchCloudflareStatisticsCommand extends Command
     {
         $this->info('Fetching Cloudflare statistics');
 
-        $statistics = Cloudflare::getTotalDomainRequests(
+        $statistics = Cloudflare::getDomainStatistics(
             config('dashboard.tiles.cloudflare_stats.key'),
             config('dashboard.tiles.cloudflare_stats.email'),
             config('dashboard.tiles.cloudflare_stats.domains')
         );
 
-        CloudflareStatsStore::make()->setDomainRequests($statistics);
+        CloudflareStatsStore::make()->setDomainStatistics($statistics);
 
         $this->info('All done!');
     }

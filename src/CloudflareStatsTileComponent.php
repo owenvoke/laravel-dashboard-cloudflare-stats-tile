@@ -19,7 +19,7 @@ class CloudflareStatsTileComponent extends Component
         $cloudflareStatsStore = CloudflareStatsStore::make();
 
         return view('dashboard-cloudflare-stats-tile::tile', [
-            'totalDomainRequests' => $cloudflareStatsStore->domainRequests(),
+            'domainStatistics' => $cloudflareStatsStore->domainStatistics(),
         ]);
     }
 }
