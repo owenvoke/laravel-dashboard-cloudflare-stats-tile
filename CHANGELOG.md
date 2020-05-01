@@ -6,6 +6,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and this 
 
 ## Unreleased
 
+## v1.0.2
+
+### Fixed
+- Fix the card title background in dark mode
+
 ## v1.0.1
 
 ### Changed
