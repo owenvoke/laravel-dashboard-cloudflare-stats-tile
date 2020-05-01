@@ -3,10 +3,7 @@
     :refresh-interval="$refreshIntervalInSeconds"
 >
     <div class="grid grid-rows-auto-1 gap-2 h-full">
-        <div
-            class="flex items-center justify-center"
-            style="background-color: rgba(255, 255, 255, .9)"
-        >
+        <div class="flex items-center justify-center">
             <h1 class="text-3xl leading-none -mt-1">Cloudflare Statistics</h1>
         </div>
 
