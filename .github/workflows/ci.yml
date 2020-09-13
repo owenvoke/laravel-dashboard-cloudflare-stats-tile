@@ -29,17 +29,11 @@ jobs:
       uses: shivammathur/setup-php@v2
       with:
         php-version: ${{ matrix.php }}
-        extensions: mbstring, zip
-        tools: prestissimo
-        coverage: pcov
+        tools: composer:v2
+        coverage: none
 
     - name: Install Composer dependencies
       run: composer update --${{ matrix.dependency-version }} --no-interaction --prefer-dist
 
     - name: PHPUnit Testing
-      run: vendor/bin/phpunit --coverage-text --coverage-clover=coverage.clover
-
-    - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v1
-      with:
-        token: ${{ secrets.CODECOV_TOKEN }}
+      run: vendor/bin/phpunit
