@@ -6,6 +6,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and this 
 
 ## Unreleased
 
+## v2.0.0 - 2020-09-13
+
+### Added
+- Add support for Laravel Dashboard v2 ([#3](https://github.com/owenvoke/laravel-dashboard-cloudflare-stats-tile/pull/3))
+
 ## v1.0.2 - 2020-05-01
 
 ### Fixed
