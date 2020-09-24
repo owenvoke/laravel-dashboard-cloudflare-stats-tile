@@ -48,9 +48,7 @@ class Cloudflare
                             return $item['httpRequests1dGroups'][0]['sum']['requests'] ?? 0;
                         }),
                         'bytes' => $item->sum(static function (array $item) {
-                            return !empty($item['httpRequests1dGroups'][0]['sum']['bytes']) 
-                                ? $item['httpRequests1dGroups'][0]['sum']['bytes'] 
-                                : 0;
+                            return $item['httpRequests1dGroups'][0]['sum']['bytes'] ?? 0;
                         }),
                     ],
                 ];
