@@ -6,6 +6,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and this 
 
 ## Unreleased
 
+## v2.0.1 - 2020-09-24
+
+### Fixed
+- Prevent error exception when there are 0 results ([#5](https://github.com/owenvoke/laravel-dashboard-cloudflare-stats-tile/pull/5))
+
 ## v2.0.0 - 2020-09-13
 
 ### Added
