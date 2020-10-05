@@ -43,7 +43,7 @@ In `app\Console\Kernel.php` you should schedule the `OwenVoke\CloudflareStatsTil
 
 protected function schedule(Schedule $schedule)
 {
-    $schedule->command(OwenVoke\CloudflareStatsTile\Commands\FetchCloudflareStatisticsCommand::class)->everyThirtyMinutes();
+    $schedule->command(\OwenVoke\CloudflareStatsTile\Commands\FetchCloudflareStatisticsCommand::class)->everyThirtyMinutes();
 }
 ```
 
